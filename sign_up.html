@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>keval sweet's</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-image: url('pic\bg.jpg');">
+<center><img id="logo" src="logo.jpg" alt="logo"></center><br>
+<a href="homepage.html" ><img src="pic\home.jpg" class="signin" height="40px" width="60px" style="position:absolute; top:80px; left:50px";></a>
+<h1>SIGN UP</h1>
+<hr style="size:3px; font-weight: bolder;";>
+
+<script > 
+    function email()
+    {
+    var emailID = document.form.emailid.value; 
+   atpos = emailID.indexOf("@"); 
+   dotpos = emailID.lastIndexOf("."); 
+   if (atpos < 1 || ( dotpos - atpos < 2 )) 
+   {
+    alert("Please enter correct email ID");
+    document.form.emailid.focus() ;
+    return false; 
+   } 
+   return( true ); 
+   }   </script>
+   
+   
+   
+   
+   
+   
+   <body>
+   <form name="form" >
+   
+  
+       <table cellpadding="10" width="10%" cellspacing="5" align="center">
+   
+   <tr>
+       <td colspan=2>
+       
+       <center><font size="4"><b>CREATE AN ACCOUNT</b></font></center>
+   
+       </td>
+   </tr>
+   
+   <tr>
+   
+     <td>Name:</td>
+     
+     <td><input type="text" name="name" id="name" size="40"></td>
+   
+   </tr>   
+
+   <tr>
+   
+     <td>Address:</td>
+   
+     <td><input type="text" name="address" id="address" size="40"></td>
+   
+   </tr>
+   
+   <tr>
+   
+     <td>PhoneNo:</td>
+   
+     <td><input type="text" name="Phoneno" id="phoneno" size="40"></td>
+   
+   </tr>
+   
+   <tr>
+   
+     <td>EmailId:</td>
+   
+     <td><input type="text" name="emailid" id="emailid" size="40"></td>
+   
+   </tr>
+
+   <tr>
+   
+    <td>Password:</td>
+  
+    <td><input type="text" name="password" id="password" size="40"></td>
+  
+  </tr>
+
+   <tr>
+   
+     <td><input type="reset"></td>
+   
+     <td colspan="2"><input onclick="email()" type="submit" value="create an account" /></td>
+   
+   </tr>
+   
+   </table>
+   </form>
+
+</body>
+</html>
